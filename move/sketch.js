@@ -10,9 +10,12 @@ function draw() {
 if(goleft == false){
   x=x+1
 }
-if(x>200) 
+if(x>400) 
 {
   goleft =true;
 }
- 
+if(goleft == true){
+  x=x-1
+} 
+
 }
