@@ -31,7 +31,7 @@ if(y>400)
   godown =true;
 }
 if(godown == true){
-  y=y-0,5
+  y=y-0.5
 } 
 if(y<0)
 {
