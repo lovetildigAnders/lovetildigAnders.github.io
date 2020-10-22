@@ -9,14 +9,14 @@ function draw() {
   background(200,200,0);
   circle(x, y, 30);
 if(goleft == false){
-  x=x+1
+  x=x+1,5
 }
 if(x>400) 
 {
   goleft =true;
 }
 if(goleft == true){
-  x=x-1
+  x=x-2
 } 
 if(x<0)
 {
@@ -24,14 +24,14 @@ if(x<0)
 }
 
 if(godown == false){
-  y=y+1
+  y=y+3
 }
 if(y>400) 
 {
   godown =true;
 }
 if(godown == true){
-  y=y-1
+  y=y-0,5
 } 
 if(y<0)
 {
