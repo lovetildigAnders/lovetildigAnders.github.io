@@ -7,8 +7,8 @@ function setup() {
 function draw() {
   background(200,200,0);
   circle(x, y, 30);
-if(goleft ==false){
-  x=x-1
+if(goleft == false){
+  x=x+1
 }
 if(x=200) 
 {
