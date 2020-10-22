@@ -1,5 +1,5 @@
 let x= 30
-let y= 30
+let y= 10
 let goleft =false; 
 let godown =false; 
 function setup() {
