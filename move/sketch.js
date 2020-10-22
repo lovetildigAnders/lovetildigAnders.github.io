@@ -17,5 +17,6 @@ if(x>400)
 if(goleft == true){
   x=x-1
 } 
-
+if(x<0)
+goleft =flase; 
 }
