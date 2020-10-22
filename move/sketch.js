@@ -1,6 +1,6 @@
 let x= 30
 let y= 30
-let goleft = false; 
+let goleft =false; 
 function setup() {
   createCanvas(400, 400);
 }
@@ -10,7 +10,7 @@ function draw() {
 if(goleft == false){
   x=x+1
 }
-if(x=200) 
+if(x>200) 
 {
   goleft =true;
 }
