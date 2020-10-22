@@ -19,7 +19,6 @@ if(goleft == true){
 } 
 if(x<0)
 {
-  goleft =flase; 
+  goleft = false; 
 }
-
 }
