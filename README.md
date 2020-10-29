@@ -1,4 +1,5 @@
 # lovetildigAnders.github.io
-- lovetildigAnders.[min side](kageside/)
-- lovetildigAnders.[stickman](sitckman/)
-- lovetildigAnders. [stickman-moving](move/)
+- Anders`.[min side](kageside/)
+- Anders`.[stickman](sitckman/)
+- Anders`.[stickman-moving](move/)
+- Anders`.[not,or,and,xor](not.or.and.xor/)
