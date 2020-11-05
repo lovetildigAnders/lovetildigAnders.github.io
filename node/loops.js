@@ -9,6 +9,6 @@ while (i>=1){
 
 // opg 1 med en for løkke
 console.log("opg 1 med for løkke")
-for(let i=10;i>=0;i--){
+for(let i=10;i>=1;i--){
     console.log(i);
 } 
