@@ -1,4 +1,3 @@
-let gg= 30
 function setup() {
   createCanvas(400, 400);
    
@@ -21,7 +20,7 @@ if (y<200 && x<200){
   }
   if(y>200 && x>200 ) {
     fill(0,255,0 )
-    rect(x,y,10)
+    circle(x,y,70)
     line (0,200,400,200)
     line (200,0,200,400)
   
