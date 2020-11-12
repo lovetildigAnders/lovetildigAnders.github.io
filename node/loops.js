@@ -12,3 +12,15 @@ console.log("opg 1 med for løkke")
 for(let i=10;i>=1;i--){
     console.log(i);
 } 
+
+// opg 2 
+console.log("opg 2")
+let a= 0;
+let v= 0;
+while(v<20){
+a= v+(a+1);
+console.log(a);
+v++;
+}
+
+// opg 3 
