@@ -23,4 +23,3 @@ console.log(a);
 v++;
 }
 
-// opg 3 
