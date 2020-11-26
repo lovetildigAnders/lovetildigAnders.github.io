@@ -3,4 +3,4 @@
 - Anders`.[stickman](sitckman/)
 - Anders`.[moving ball](move/)
 - Anders`.[not,or,and,xor](not.or.and,xor/)
-- Anders`.[duel-parabel](duelparapel/)
+- Anders`.[duel-parabel](duel-parapel/)
