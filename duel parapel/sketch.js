@@ -4,16 +4,12 @@ function setup() {
   slider.position(windowWidth/2-180,200 );
   slider.style('width', '80px');
 }
-//a cordinate
 let ay = 300
 let ax = 50
-//b cordinate
 let by = 50
 let bx = 200
-//c cordinate
 let cy = 300
 let cx = 350
-//diameter
 let diameter = 3
 function draw() {
   let n = slider.value();
