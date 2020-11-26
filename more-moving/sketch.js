@@ -1,5 +1,7 @@
-let x= 30
-let y= 10
+let x= new array (5)
+let y= new array (5)
+for(let i=0;i<x,length;i++)
+for(let b=0;b<y,length;b++)
 let goleft =false; 
 let godown =false; 
 function setup() {
