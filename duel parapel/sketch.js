@@ -2,13 +2,13 @@ function setup() {
   let canvas = createCanvas (400, 400);
   slider = createSlider(2, 50, 2);
   slider.position(windowWidth/2-180,200 );
-  slider.style('width', '80px');
+  slider.style('width', '70px');
 }
-let ay = 300
+let ay = 400
 let ax = 50
 let by = 50
 let bx = 200
-let cy = 300
+let cy = 400
 let cx = 350
 let diameter = 3
 function draw() {
