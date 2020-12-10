@@ -1,62 +1,37 @@
-//definitioner på forskellige arrays
-//antal bolde
-const antB =100
-//diameter på bolde
-let ds = new Array(antB);
-//start koordinat til x og y
-let x = new Array(antB);
-let y = new Array(antB);
-//hastighed til x og y 
-let vx = new Array(antB);
-let vy = new Array(antB);
-// r g og b values til farverne
-let r = new Array(antB);
-let g = new Array(antB);
-let b = new Array(antB);
+const ballcount =15
+let ds = new Array(ballcount);
+let x = new Array(ballcount);
+let y = new Array(ballcount);
+let xspeed = new Array(ballcount);
+let yspeed = new Array(ballcount);
 
 function setup() {
-    let canvas = createCanvas(500, 400);
-    canvas.parent(game)
-//verdier for forskellige arrays
-    for (let i = 0; i < antB; i++) {
-        //random diameter
+createCanvas(500, 400);    
+    for (let i = 0; i < ballcount; i++) {
         ds[i] = random(5, 20)
-        //spawn location
         x[i] = random(ds[i], width - ds[i]);
         y[i] = random(ds[i], height - ds[i]);
-        //hastighed på x og y
-        vx[i] = random(-10,10)
-        vy[i] = random(-10,10)
-        //farve
-        r[i] = random(0,255)
-        g[i] = random(0,255)
-        b[i] = random(0,255)
+        xspeed[i] = random(-10,10)
+        yspeed[i] = random(-10,10)
     }
 }
 function draw() {
     background(1);
-    fill(255)
-//tegning af cirkel.
-    for (i = 0; i < antB; i++) {
-//farve bliver påført
-        fill(r[i],g[i],b[i])
-//cirkler bliver tegnet
+    for (i = 0; i < ballcount; i++) {
         circle(x[i], y[i], ds[i]);
-//hastighed til cirkler.
-        x[i] += vx[i];
-        y[i] += vy[i];
-//restriktioner
+        x[i] += xspeed[i];
+        y[i] += yspeed[i];
         if (x[i] > width - ds[i]) {
-            vx[i] = -vx[i];
+            xspeed[i] = -xspeed[i];
         }
         if (x[i] < ds[i]) {
-            vx[i] = -vx[i];
+            xspeed[i] = -xspeed[i];
         }
         if (y[i] > height - ds[i]) {
-            vy[i] = -vy[i];
+            yspeed[i] = -yspeed[i];
         }
         if (y[i] < ds[i]) {
-            vy[i] = -vy[i];
+            yspeed[i] = -yspeed[i];
         }
     }
 }
