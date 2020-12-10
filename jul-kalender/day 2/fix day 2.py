@@ -1,6 +1,5 @@
 lines = []
 
-
 def load_data(fileName):
     global lines
     with open(fileName, "r") as input_data:
