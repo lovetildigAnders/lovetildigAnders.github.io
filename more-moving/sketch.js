@@ -1,9 +1,9 @@
 let ballcount =5
 let ds= new Array(ballcount);
-let ys = new Array(ballcount);
-let xs = new Array(ballcount);
-let xSpeed = 5
-let ySpeed = 3
+let y = new Array(ballcount);
+let x = new Array(ballcount);
+let vx = 5
+let vy = 3
 
 function setup() {
 createCanvas(500,500);
@@ -13,27 +13,30 @@ ds[i]= random(5,50)
   }
 
 for (let i = 0; i < ballcount; i++) {
-  xs[i]= random(0,innerWidth);
-  ys[i]= random(0,innerHeight)
+  x[i]= random(0,innerWidth);
+  y[i]= random(0,innerHeight)
   }
 
 }
-function draw(){
-  background(200);
-for (let i = 0; i < ballcount; i++) {
-  circle(xs[i],ys[i],ds[i]);
-  xs[i]++
-  ys[i]++
+function draw() {
+background(1);
+fill(255)
+for (i = 0; i < ballcount; i++) {
+circle(x[i], y[i], ds[i]);
+x[i] += vx[i];
+y[i] += vy[i];
+if (x[i] > width - ds[i]) {
+vx[i] = -vx[i];
 }
-if (xs[i] > width - ds[i] / 2||xs[i] < 0 + ds[i] / 2) {
-  xSpeed = -xSpeed;
+if (x[i] < ds[i]) {
+vx[i] = -vx[i];
 }
-
-if (ys[i] > height - ds[i] / 2 || ys[i] < 0 + ds[i] / 2) {
-  ySpeed = -ySpeed;
+if (y[i] > height - ds[i]) {
+vy[i] = -vy[i];
 }
-
-xs[i] = xs[i] + xSpeed;
-ys[i] = ys[i] + ySpeed;
+if (y[i] < ds[i]) {
+ vy[i] = -vy[i];
+}
+}
 }
 
